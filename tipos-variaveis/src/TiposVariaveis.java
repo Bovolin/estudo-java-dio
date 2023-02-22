@@ -4,7 +4,7 @@ public class TiposVariaveis {
 
         //Variaveis
         int idade = 10;
-        String nome = "Filipe";
+        //String nome = "Filipe";
 
         //Constante = final
         final double VALOR_DE_PI = 3.14;
