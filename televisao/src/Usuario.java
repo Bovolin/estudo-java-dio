@@ -1,3 +1,11 @@
+/**
+ * <h1>Usuário</h1>
+ * <p>Classe para testar o java usando métodos</p>
+ * 
+ * @author Filipe Bovolin
+ * @version 1.0
+ * @since 22/02/2023
+ */
 public class Usuario {
     public static void main(String[] args) throws Exception {
 
