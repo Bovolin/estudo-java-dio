@@ -8,7 +8,7 @@ public class SegundoExercicio {
 
         int[] numbers = {0, -5, 15, 50, 8, 4};
 
-        for(int i = 5; i >= 0; i--){
+        for(int i = (numbers.length - 1); i >= 0; i--){
             System.out.println(numbers[i]);
         }
 
