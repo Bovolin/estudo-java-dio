@@ -1,5 +1,5 @@
-import java.util.Locale;
-import java.util.Scanner;
+import edu.filipe.exercicios.PrimeiroExercicio;
+import edu.filipe.exercicios.SegundoExercicio;
 
 public class MinhaClasse {
     public static void main(String[] args) throws Exception {
@@ -7,7 +7,7 @@ public class MinhaClasse {
         /*String nome = args[0];
         String sobrenome = args[1];
         int idade = Integer.valueOf(args[2]);
-        double altura = Double.valueOf(args[3]);*/
+        double altura = Double.valueOf(args[3]);
 
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
@@ -26,6 +26,9 @@ public class MinhaClasse {
         System.out.println("Meu nome é " + nome + " " + sobrenome);
         System.out.println("tenho " + idade + " ano(s)");
         System.out.println("e meço " + altura + "m.");
+
+        PrimeiroExercicio.MostrarNomes();*/
+        SegundoExercicio.InverterOrdem();
 
     }
 }
