@@ -25,9 +25,9 @@ public class MinhaClasse {
 
         System.out.println("Meu nome é " + nome + " " + sobrenome);
         System.out.println("tenho " + idade + " ano(s)");
-        System.out.println("e meço " + altura + "m.");
+        System.out.println("e meço " + altura + "m.");*/
 
-        PrimeiroExercicio.MostrarNomes();*/
+        PrimeiroExercicio.MostrarNomes();
         SegundoExercicio.InverterOrdem();
 
     }
