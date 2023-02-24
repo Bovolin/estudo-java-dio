@@ -8,12 +8,14 @@ public class Pilha {
         this.refNoEntradaPilha = null;
     }
 
+    //empilhar
     public void push(No novoNo){
         No refAuxiliar = refNoEntradaPilha;
         refNoEntradaPilha = novoNo;
         refNoEntradaPilha.setReNo(refAuxiliar);
     }
 
+    //desempilhar
     public No pop(){
         if(!this.isEmpty()){
             No noPoped = refNoEntradaPilha;
@@ -23,10 +25,12 @@ public class Pilha {
         return null;
     }
 
+    //apenas olhar o topo
     public No top(){
         return refNoEntradaPilha;
     }
 
+    //ver se está vazio
     public boolean isEmpty(){
         if(refNoEntradaPilha == null) return true;
         return false;
