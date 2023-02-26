@@ -8,6 +8,7 @@ Estudos de Java pela DIO
 - Filas
 - Listas Encadeadas
 - Listas Duplamente Encadeadas
+- Listas Circulares
 
 ### Exercícios enviados
 - Utilização do terminal e args
