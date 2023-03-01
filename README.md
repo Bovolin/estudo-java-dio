@@ -9,6 +9,7 @@ Estudos de Java pela DIO
 - Listas Encadeadas
 - Listas Duplamente Encadeadas
 - Listas Circulares
+- Árvores Binárias
 
 ### Exercícios enviados
 - Utilização do terminal e args
