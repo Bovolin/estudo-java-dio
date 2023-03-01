@@ -1,5 +1,5 @@
-# estudo-java-dio
-Estudos de Java pela DIO
+# Estudos Java DIO
+Bootcamp oferecido pelo Banco Pan para aprender JAVA.
 
 ## Projetos até agora:
 - Tipos de Variáveis
