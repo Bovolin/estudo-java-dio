@@ -17,3 +17,4 @@ Bootcamp oferecido pelo Banco Pan para aprender JAVA.
 - Utilização do terminal e args
 - Televisão
 - Métodos
+- Collections
