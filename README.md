@@ -11,10 +11,13 @@ Bootcamp oferecido pelo Banco Pan para aprender JAVA.
 - Listas Circulares
 - Árvores Binárias
 - Orientação a Objetos
-- Collections
+- Lists
+- Set
+- Map
 
 ### Exercícios enviados
 - Utilização do terminal e args
 - Televisão
 - Métodos
-- Collections
+- Set
+- Map
