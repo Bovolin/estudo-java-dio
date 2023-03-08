@@ -42,11 +42,7 @@ public class StreamApi {
         System.out.println(numeros.stream()
                 .map(Integer::parseInt)
                 .collect(Collectors.toList())
-                .removeIf(i -> (i % 2 != 0)));
-
-
-        
-                
+                .removeIf(i -> (i % 2 != 0)));               
 
     }
 
