@@ -1,5 +1,6 @@
 package edu.filipe.maps;
 import java.util.*;
+import java.util.function.Function;
 
 public class MapOrdenado {
     
@@ -33,7 +34,32 @@ public class MapOrdenado {
         }
 
         System.out.println("\n-- Ordem Alfabética dos Livros --");
-        Set<Map.Entry<String, Livro>> livrosAlfabeticoLivros = new TreeSet<>(new ComparatorNome());
+        //Sem StreamAPI
+        /*Set<Map.Entry<String, Livro>> livrosAlfabeticoLivros = new TreeSet<>(new ComparatorNome());*/
+        
+        //Com StreamAPI
+        /*Set<Map.Entry<String, Livro>> livrosAlfabeticoLivros = new TreeSet<>(
+        new Comparator<Map.Entry<String, Livro>>(){
+            @Override
+             public int compare(Map.Entry<String, Livro> l1, Map.Entry<String, Livro> l2){
+                return l1.getValue().getNome().compareToIgnoreCase(l2.getValue().getNome());
+            }
+        });*/
+        
+        //Com Interface
+        /*Set<Map.Entry<String, Livro>> livrosAlfabeticoLivros = new TreeSet<>(Comparator.comparing(
+            new Function<Map.Entry<String, Livro>, String>(){
+                @Override
+                public String apply(Map.Entry<String, Livro> livro){
+                    return livro.getValue().getNome();
+                }
+            }
+        ));*/
+
+        //Com Lambda
+        Set<Map.Entry<String, Livro>> livrosAlfabeticoLivros = new TreeSet<>(Comparator.comparing(
+            livro -> livro.getValue().getNome()
+        ));
         livrosAlfabeticoLivros.addAll(livros.entrySet());
         for(Map.Entry<String, Livro> livro : livrosAlfabeticoLivros){
             System.out.println(livro.getKey() + " - " + livro.getValue().getNome());
@@ -98,9 +124,11 @@ class Livro{
     
 }
 
+/* Sem StreamAPI
 class ComparatorNome implements Comparator<Map.Entry<String, Livro>>{
     @Override
     public int compare(Map.Entry<String, Livro> l1, Map.Entry<String, Livro> l2){
         return l1.getValue().getNome().compareToIgnoreCase(l2.getValue().getNome());
     }
 }
+*/
